@@ -5,9 +5,7 @@ const express = require('express'),
       FileRouter = require("./FileRouter")
 
 /* GET main endpoint. */
-router.get('/', (req, res, next) => {
-  res.send({ message: 'Welcome Buddy!' })
-})
+
 router.use("/", FileRouter)
 router.post('/upload',
   images.multer.single('image'), 
