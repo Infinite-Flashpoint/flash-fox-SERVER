@@ -8,7 +8,6 @@ const bp = require('body-parser')
       //All Route Files
 const routes = require('./routes/index')
 
-      //Express Instance
 const app = express()
 const mongooseConfig = {
   useNewUrlParser: true,
